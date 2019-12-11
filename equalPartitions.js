@@ -3,7 +3,7 @@
 // 1 positive integer, k
 
 // GOAL
-// Divide A into k segments where the maximum sum of any segment is minimized
+// Divide A into k segments such that the maximum sum of any segment is minimized
 
 const arraySum = arr => arr.reduce((sum, num) => sum+num, 0)
 
