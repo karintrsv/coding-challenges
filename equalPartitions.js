@@ -1,9 +1,18 @@
-// INPUT
-// 1 array of positive integers, A
-// 1 positive integer, k
-
-// GOAL
-// Divide A into k segments such that the maximum sum of any segment is minimized
+/*
+ * Challenge from Daily Coding Problem
+ *
+ * INPUT
+ * 1 array of positive integers, A
+ * 1 positive integer, k
+ * 
+ * GOAL
+ * Divide A into k segments such that the maximum sum of any segment is minimized
+ * 
+ * example input
+ * [1, 3, 4, 1, 5, 1, 2, 5, 3] and 3
+ * expected output
+ * [ [ 1, 3, 4 ], [ 1, 5, 1 ], [ 2, 5 ] ]
+ */
 
 const arraySum = arr => arr.reduce((sum, num) => sum+num, 0)
 
@@ -24,8 +33,3 @@ const optimumDivisor = (arr, n) => {
   }
   return partitions;
 };
-
-console.log(optimumDivisor([1,3,4,1,5,1,2,5,3], 3))
-
-// expected output
-// [ [ 1, 3, 4 ], [ 1, 5, 1 ], [ 2, 5 ] ]
