@@ -1,5 +1,5 @@
 #
-#  Iseng Ngerjain
+#  Just for Fun
 #
 #  INPUT
 #  None
@@ -34,7 +34,7 @@ def coorIsUnmarked(coor, board):
     x, y = coor
 
     try:
-        return board[x, y] == -1
+        return board[x, y] == -1 and x >= 0 and y >= 0
 
     # if the coordinate is out of bound
     except IndexError:
