@@ -26,5 +26,4 @@ def sieve(n):
     return list(filter(lambda x: x != -1, arr))
 
 
-with open('asd.txt', 'w') as file:
-    file.write(str(sieve(100000)))
+print(sieve(100000))
