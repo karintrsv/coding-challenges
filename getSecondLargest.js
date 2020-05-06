@@ -26,3 +26,5 @@ getSecondLargest = arr => {
 
   return secondLargest;
 };
+
+console.log(getSecondLargest([4, 2, 5, 1]));
