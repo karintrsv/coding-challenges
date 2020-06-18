@@ -14,26 +14,26 @@ const generateChar = (c, n) => [...Array(n > 0 ? n : 0)].fill(c).join("");
 
 //pola 1
 
-const createMaze1 = n => {
-    const oddWall = char + ' ' + generateChar(char, n-2)
-    const evenWall = generateChar(char, n-2) + ' ' + char
-    const emptyWall = char + generateChar(' ', n-2) + char
+const createMaze1 = (n) => {
+  const oddWall = char + " " + generateChar(char, n - 2);
+  const evenWall = generateChar(char, n - 2) + " " + char;
+  const emptyWall = char + generateChar(" ", n - 2) + char;
 
-    loop = (n+1)/4
+  loop = (n + 1) / 4;
 
-    while(loop > 0) {
-        console.log(oddWall)
-        console.log(emptyWall)
-        console.log(evenWall)
-        loop !== 1 && console.log(emptyWall)
+  while (loop > 0) {
+    console.log(oddWall);
+    console.log(emptyWall);
+    console.log(evenWall);
+    loop !== 1 && console.log(emptyWall);
 
-        loop-=1
-    }
-}
+    loop -= 1;
+  }
+};
 
 //pola 2
 
-const createMaze2 = n => {
+const createMaze2 = (n) => {
   let lw = char + " ",
     rw = "";
   let hw = generateChar(char, n - 2);
@@ -63,7 +63,8 @@ const createMaze2 = n => {
     lw = lw.replace(char + " ", "");
     rw = rw.replace(" " + char, "");
     hw += generateChar(char, 4);
-    i < Math.floor(n / 4) && console.log(lw + " " + generateChar(" ", len + 4) + rw);
+    i < Math.floor(n / 4) &&
+      console.log(lw + " " + generateChar(" ", len + 4) + rw);
   }
 };
 

@@ -15,6 +15,8 @@
 
 const str = "uuuuxaaaxuuu";
 
+//Solution 1
+
 //maximum same consecutive letter
 const maxCount = 3;
 
@@ -41,3 +43,7 @@ function solution(str) {
 }
 
 console.log(solution(str));
+
+//Solution 2
+
+str.replace(/(.)\1{3,}/g, (match) => match.slice(0, 3));
