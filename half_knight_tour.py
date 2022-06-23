@@ -11,7 +11,7 @@
 
 import numpy as np
 
-board = np.zeros((4, 8))
+board = np.zeros((8, 8))
 # board
 # array([[0., 0., 0., 0., 0., 0., 0., 0.],
 #        [0., 0., 0., 0., 0., 0., 0., 0.],
